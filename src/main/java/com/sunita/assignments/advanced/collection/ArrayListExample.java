@@ -1,49 +1,74 @@
 package com.sunita.assignments.advanced.collection;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Iterator;
-
-import javafx.print.Collation;
+import java.util.List;
 
 //Java program to demonstrate ArrayList
 public class ArrayListExample {
 
-	public static void main(String[] args) {
+	// declare ArrayList variable
+	public ArrayList<String> list;
 
-		ArrayList<String> list = new ArrayList<String>();
+	// constructor
+	ArrayListExample() {
+		list = new ArrayList<String>();
+	}
+
+	public List<String> createAndPrintArrayList() {
+
+		// Add new items to list
 		list.add("Mumbai");
 		list.add("Pune");
 		list.add("Delhi");
 		list.add("Banglore");
-		System.out.println(list);
 
-		// iterate elements
-		/*
-		 * Iterator itr = list.iterator(); while(itr.hasNext()){
-		 * System.out.println(itr.next()); }
-		 */
+		// print list
+		System.out.println("ArrayList elements are : " + list);
 
-		System.out.println("Second element " + list.get(1));
+	/*	for (int i = 0; i < list.size(); i++) 
+			System.out.println("ArrayList elements " + list.get(i));*/
+		
+		return list;
+	}
+
+	// sorted list
+	public List<String> verifySortedList(List<String> list) {
+
+		
+		Collections.sort(list);
+		System.out.println("Sorted List : " + list);
+		return list;
+	}
+
+	// remove ArrayList Element
+	public void removeArrayListElement(String str) {
+		System.out.println("Original List before removing Pune :" + list);
+		list.remove(str);
+		System.out.println("Updated list  after removing Arralist element \"Pune\" : " + list);
+	}
+
+	// check if ArrayList is Empty
+
+	public void verifyListIsEmptyorNot() {
+		System.out.println("Check if ArrayList is Empty  : " + list.isEmpty());
+	}
+
+	/*public static void main(String[] args) {
+
+		ArrayListExample objArrayListExample = new ArrayListExample();
+
+		// create and print ArrayList
+		List<String> objList = objArrayListExample.createAndPrintArrayList();
 
 		// sort the list
-		System.out.println("Sorted list");
-		Collections.sort(list);
-		/*
-		 * for(String city:list){ System.out.println(city); }
-		 */
-		System.out.println(list);
+		objArrayListExample.verifySortedList(objList);
 
-		// remove Delhi from list
-		list.remove("Delhi");
-		System.out.println("New list after removing Delhi");
+		// remove ArrayList element
+		objArrayListExample.removeArrayListElement("Pune");
 
-		System.out.println(list);
-
-		// check if list is empty
-		System.out.println("Check if ArrayList is Empty :" + list.isEmpty());
-
-	}
+		// check is ArrayList is empty
+		objArrayListExample.verifyListIsEmptyorNot();
+	}*/
 
 }
