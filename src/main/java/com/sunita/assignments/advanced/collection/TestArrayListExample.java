@@ -2,6 +2,7 @@ package com.sunita.assignments.advanced.collection;
 
 import java.util.List;
 
+//this java program calls the methods from ArrayListExample
 public class TestArrayListExample {
 
 	public static void main(String[] args) {

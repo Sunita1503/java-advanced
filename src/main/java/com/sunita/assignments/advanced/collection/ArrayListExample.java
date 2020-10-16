@@ -22,53 +22,42 @@ public class ArrayListExample {
 		list.add("Pune");
 		list.add("Delhi");
 		list.add("Banglore");
+		list.add("Surat");
 
 		// print list
-		System.out.println("ArrayList elements are : " + list);
+		System.out.println("ArrayList : " + list);
 
-	/*	for (int i = 0; i < list.size(); i++) 
-			System.out.println("ArrayList elements " + list.get(i));*/
-		
+		/*
+		 * for (int i = 0; i < list.size(); i++) System.out.println(
+		 * "ArrayList elements " + list.get(i));
+		 */
+		System.out.println();
 		return list;
 	}
 
 	// sorted list
 	public List<String> verifySortedList(List<String> list) {
 
-		
 		Collections.sort(list);
 		System.out.println("Sorted List : " + list);
+		System.out.println();
 		return list;
+
 	}
 
 	// remove ArrayList Element
 	public void removeArrayListElement(String str) {
-		System.out.println("Original List before removing Pune :" + list);
+		System.out.println("Original List before removing \"Pune\" :" + list);
 		list.remove(str);
-		System.out.println("Updated list  after removing Arralist element \"Pune\" : " + list);
+		System.out.println("Updated list after removing \"Pune\"   :" + list);
+		System.out.println();
 	}
 
 	// check if ArrayList is Empty
 
 	public void verifyListIsEmptyorNot() {
-		System.out.println("Check if ArrayList is Empty  : " + list.isEmpty());
+		System.out.println("Check if ArrayList is Empty : " + list.isEmpty());
+		System.out.println();
 	}
-
-	/*public static void main(String[] args) {
-
-		ArrayListExample objArrayListExample = new ArrayListExample();
-
-		// create and print ArrayList
-		List<String> objList = objArrayListExample.createAndPrintArrayList();
-
-		// sort the list
-		objArrayListExample.verifySortedList(objList);
-
-		// remove ArrayList element
-		objArrayListExample.removeArrayListElement("Pune");
-
-		// check is ArrayList is empty
-		objArrayListExample.verifyListIsEmptyorNot();
-	}*/
 
 }
