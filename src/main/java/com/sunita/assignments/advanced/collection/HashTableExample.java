@@ -7,30 +7,31 @@ import java.util.Map;
 public class HashTableExample {
 
 	// declare HashTable variable
-	Hashtable<Integer, String> empData;
+	Hashtable<String, String> empData;
 
 	// constructor
 	public HashTableExample() {
 
-		empData = new Hashtable<Integer, String>();
+		empData = new Hashtable<String, String>();
 
 	}
 
-	public void createAndPrintHashTableElements() {
+	public Hashtable<String, String> createAndPrintHashTableElements() {
 
 		// add key , values
-		empData.put(101, "Ravi");
-		empData.put(102, "Vyas");
-		empData.put(103, "Arpita");
-		empData.put(104, "Shirley");
-		empData.put(105, "Allen");
-		empData.put(103, "Rudra");
+		empData.put("101", "Ravi");
+		empData.put("102", "Vyas");
+		empData.put("103", "Arpita");
+		empData.put("104", "Shirley");
+		empData.put("105", "Allen");
+		empData.put("108", "Rudra");
 		// display map values
 		for (Map.Entry mapValue : empData.entrySet()) {
 			System.out.println(mapValue.getKey() + " " + mapValue.getValue());
 		}
 
 		System.out.println();
+		return empData;
 	}
 
 	public void removeHashTableElement() {
@@ -61,7 +62,7 @@ public class HashTableExample {
 
 		System.out.println("Original Emp Data : " + empData);
 
-		empData.putIfAbsent(104, "Ruben");
+		empData.putIfAbsent("104", "Ruben");
 		System.out.println("Updated emp data :" + empData);
 
 		System.out.println();

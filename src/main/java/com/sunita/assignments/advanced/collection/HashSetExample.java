@@ -10,8 +10,8 @@ public class HashSetExample {
 
 	// constructor
 	public HashSetExample() {
-		set = new HashSet<String>();
 
+		set = new HashSet<String>();
 	}
 
 	public HashSet<String> createAndPrintHashSet() {
@@ -26,22 +26,12 @@ public class HashSetExample {
 		return set;
 	}
 
+	//Remove set element
 	public void removeSetElement() {
+		
+		System.out.println("Remove set Elemnt UK");
 		set.remove("UK");
 		System.out.println("Updated set elements : " + set);
 	}
-
-	/*
-	 * public static void main(String[] args) {
-	 * 
-	 * 
-	 * // add new values set.add("Spain"); set.add("Peru"); System.out.println(
-	 * "Updated set values " + set);
-	 * 
-	 * // remove Spain from set set.remove("Spain"); System.out.println(
-	 * "New set values after removing Spain " + set);
-	 * 
-	 * }
-	 */
 
 }

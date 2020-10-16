@@ -7,7 +7,10 @@ public class TestHashSetExample {
 
 	public static void main(String[] args) {
 
-		// create object
+		// create object of HashSet
+		HashSet<String> objHashSet = null;
+		
+		//create object of HashSetExample
 		HashSetExample objHashSetExample = new HashSetExample();
 
 		// create and Print HashSet
