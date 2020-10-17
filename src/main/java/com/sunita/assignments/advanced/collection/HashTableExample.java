@@ -19,12 +19,16 @@ public class HashTableExample {
 	public Hashtable<String, String> createAndPrintHashTableElements() {
 
 		// add key , values
-		empData.put("101", "Ravi");
-		empData.put("102", "Vyas");
-		empData.put("103", "Arpita");
-		empData.put("104", "Shirley");
-		empData.put("105", "Allen");
-		empData.put("108", "Rudra");
+		empData.put("UserName", "Ravi36536");
+		empData.put("Password", "Vyas12434");
+		empData.put("OptionalField", "Arpita");
+		empData.put("SecurityQuestion", "What is your birthyear?");
+		empData.put("SecurityAnswer", "2005");
+		empData.put("Captcha", "AAAA");
+		empData.put("104", "KOP");
+		empData.put("106", "Pune ");
+		empData.put("102", "Mumbai");
+
 		// display map values
 		for (Map.Entry mapValue : empData.entrySet()) {
 			System.out.println(mapValue.getKey() + " " + mapValue.getValue());

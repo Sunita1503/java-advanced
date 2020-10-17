@@ -26,9 +26,9 @@ public class HashSetExample {
 		return set;
 	}
 
-	//Remove set element
+	// Remove set element
 	public void removeSetElement() {
-		
+
 		System.out.println("Remove set Elemnt UK");
 		set.remove("UK");
 		System.out.println("Updated set elements : " + set);
