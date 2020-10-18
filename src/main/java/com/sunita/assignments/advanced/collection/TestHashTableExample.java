@@ -53,7 +53,7 @@ public class TestHashTableExample {
 		// verify if Entry Exists using getOrDefault
 		objHashTableExample.verifyIfEntryExists();
 
-		System.out.println("Login with UerName and Password to URL ----------");
+		System.out.println("Login with UserName and Password to URL ----------");
 		// call doLogin method
 		doLogin(objHashTable);
 
