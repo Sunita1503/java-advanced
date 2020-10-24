@@ -30,7 +30,6 @@ public class TestHashTableExample {
 
 		// click on sign in button
 		System.out.println("Click on Sign in Button");
-
 	}
 
 	public static void main(String[] args) {
@@ -43,7 +42,7 @@ public class TestHashTableExample {
 
 		// create and print entry values
 		objHashTable = objHashTableExample.createAndPrintHashTableElements();
-
+/*
 		// Remove entry
 		objHashTableExample.removeHashTableElement();
 
@@ -51,7 +50,7 @@ public class TestHashTableExample {
 		objHashTableExample.verifyIfEntryAbsent();
 
 		// verify if Entry Exists using getOrDefault
-		objHashTableExample.verifyIfEntryExists();
+		objHashTableExample.verifyIfEntryExists();*/
 
 		System.out.println("Login with UserName and Password to URL ----------");
 		// call doLogin method
